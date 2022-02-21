@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicElements", "basiceleme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailServices", "MailServices\MailServices.csproj", "{4754EEA2-D9CB-4FF7-B9B1-4B05C02EB64C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{86AC9CF2-953B-46BE-ADF8-A9BEC27C2480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4754EEA2-D9CB-4FF7-B9B1-4B05C02EB64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4754EEA2-D9CB-4FF7-B9B1-4B05C02EB64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4754EEA2-D9CB-4FF7-B9B1-4B05C02EB64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AC9CF2-953B-46BE-ADF8-A9BEC27C2480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AC9CF2-953B-46BE-ADF8-A9BEC27C2480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AC9CF2-953B-46BE-ADF8-A9BEC27C2480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AC9CF2-953B-46BE-ADF8-A9BEC27C2480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

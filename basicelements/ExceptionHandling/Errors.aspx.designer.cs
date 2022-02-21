@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace basic_elements.Sample
+namespace ExceptionHandling
 {
 
 
-    public partial class Cookies
+    public partial class Errors
     {
 
         /// <summary>
