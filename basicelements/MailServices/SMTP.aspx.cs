@@ -45,7 +45,7 @@ namespace MailServices
             smtpClient.Credentials = new System.Net.NetworkCredential()
             {
                 UserName = "phoenix.k.1909@gmail.com",
-                Password = "k124578K"
+                Password = ""
             };
             // Gmail works on SSL, so set this property to true
             smtpClient.EnableSsl = true;
