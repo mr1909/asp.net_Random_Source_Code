@@ -33,6 +33,11 @@ namespace basic_elements.Sample
             //if AutoPostBack is true then on TextChange event will be triggered!
             TextBox1.AutoPostBack = false;
 
+
+            //adding EventHandler to button in Page_Load
+            //Button1.Click += new EventHandler(Button1_Click);
+            //Button1.Command += new CommandEventHandler(Button1_Command);
+
         }
 
 

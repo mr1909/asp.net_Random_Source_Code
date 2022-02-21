@@ -76,6 +76,7 @@
     <Content Include="Assets\Libs\bootstrap-4.6.1\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\js\bootstrap.js" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\js\bootstrap.min.js" />
+    <Content Include="Assets\XML\dropdownlist.xml" />
     <Content Include="packages.config" />
     <Content Include="MasterPage\MasterPage1.Master" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\css\bootstrap-grid.css.map" />
@@ -100,9 +101,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sample\Cookies.aspx" />
+    <Content Include="Sample\Dropdownlist.aspx" />
     <Content Include="Sample\IsPostBack.aspx" />
     <Content Include="Sample\PageLifeCycleEvents.aspx" />
-    <Content Include="Sample\TextboxCheckboxRadiobutton.aspx" />
+    <Content Include="Sample\Server.MapPath.aspx" />
+    <Content Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +118,20 @@
       <DependentUpon>MasterPage1.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample\Cookies.aspx.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\Cookies.aspx.designer.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\Dropdownlist.aspx.cs">
+      <DependentUpon>Dropdownlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\Dropdownlist.aspx.designer.cs">
+      <DependentUpon>Dropdownlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sample\IsPostBack.aspx.cs">
       <DependentUpon>IsPostBack.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,12 +146,19 @@
     <Compile Include="Sample\PageLifeCycleEvents.aspx.designer.cs">
       <DependentUpon>PageLifeCycleEvents.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\TextboxCheckboxRadiobutton.aspx.cs">
-      <DependentUpon>TextboxCheckboxRadiobutton.aspx</DependentUpon>
+    <Compile Include="Sample\Server.MapPath.aspx.cs">
+      <DependentUpon>Server.MapPath.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\TextboxCheckboxRadiobutton.aspx.designer.cs">
-      <DependentUpon>TextboxCheckboxRadiobutton.aspx</DependentUpon>
+    <Compile Include="Sample\Server.MapPath.aspx.designer.cs">
+      <DependentUpon>Server.MapPath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx.cs">
+      <DependentUpon>TextboxCheckboxRadiobuttonHyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx.designer.cs">
+      <DependentUpon>TextboxCheckboxRadiobuttonHyperlink.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
