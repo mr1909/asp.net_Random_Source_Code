@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicElements", "basic_elements\BasicElements.csproj", "{2F4E6A98-C1BA-4A47-A26E-1E20FD2B49AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicElements", "basicelements\BasicElements.csproj", "{2F4E6A98-C1BA-4A47-A26E-1E20FD2B49AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailServices", "MailServices\MailServices.csproj", "{4754EEA2-D9CB-4FF7-B9B1-4B05C02EB64C}"
 EndProject
