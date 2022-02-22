@@ -103,15 +103,24 @@
   <ItemGroup>
     <Content Include="Sample\Cookies\WebForm1.aspx" />
     <Content Include="Sample\Cookies\WebForm2.aspx" />
+    <Content Include="Sample\PanelControl\CreatingControlsDynamicallyUsingPanelControl.aspx" />
+    <Content Include="Sample\PanelControl\PanelControl.aspx" />
     <Content Include="Sample\QueryString\WebForm1.aspx" />
-    <Content Include="Sample\Dropdownlist.aspx" />
-    <Content Include="Sample\IsPostBack.aspx" />
-    <Content Include="Sample\PageLifeCycleEvents.aspx" />
+    <Content Include="Sample\Dropdownlist\Dropdownlist.aspx" />
+    <Content Include="Sample\IsPostBack\IsPostBack.aspx" />
+    <Content Include="Sample\PageLifeCycleEvents\PageLifeCycleEvents.aspx" />
     <Content Include="Sample\QueryString\WebForm2.aspx" />
-    <Content Include="Sample\Server.MapPath.aspx" />
+    <Content Include="Sample\Server.MapPath\Server.MapPath.aspx" />
     <Content Include="Sample\SessionSate\WebForm1.aspx" />
     <Content Include="Sample\SessionSate\WebForm2.aspx" />
-    <Content Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx" />
+    <Content Include="Sample\TextboxCheckboxRadiobuttonHyperlink\TextboxCheckboxRadiobuttonHyperlink.aspx" />
+    <Content Include="Sample\ValidatorControl\CompareValidatorControl.aspx" />
+    <Content Include="Sample\ValidatorControl\CustomValidatorControl.aspx" />
+    <Content Include="Sample\ValidatorControl\RangevalidatorControl.aspx" />
+    <Content Include="Sample\ValidatorControl\RegularExpressionValidatorControl.aspx" />
+    <Content Include="Sample\ValidatorControl\RequiredFieldValidatorControl.aspx" />
+    <Content Include="Sample\ValidatorControl\ValidationGroups.aspx" />
+    <Content Include="Sample\ValidatorControl\ValidationSummaryControl.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +146,20 @@
     <Compile Include="Sample\Cookies\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sample\PanelControl\CreatingControlsDynamicallyUsingPanelControl.aspx.cs">
+      <DependentUpon>CreatingControlsDynamicallyUsingPanelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\PanelControl\CreatingControlsDynamicallyUsingPanelControl.aspx.designer.cs">
+      <DependentUpon>CreatingControlsDynamicallyUsingPanelControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\PanelControl\PanelControl.aspx.cs">
+      <DependentUpon>PanelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\PanelControl\PanelControl.aspx.designer.cs">
+      <DependentUpon>PanelControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sample\QueryString\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,25 +167,25 @@
     <Compile Include="Sample\QueryString\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\Dropdownlist.aspx.cs">
+    <Compile Include="Sample\Dropdownlist\Dropdownlist.aspx.cs">
       <DependentUpon>Dropdownlist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\Dropdownlist.aspx.designer.cs">
+    <Compile Include="Sample\Dropdownlist\Dropdownlist.aspx.designer.cs">
       <DependentUpon>Dropdownlist.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\IsPostBack.aspx.cs">
+    <Compile Include="Sample\IsPostBack\IsPostBack.aspx.cs">
       <DependentUpon>IsPostBack.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\IsPostBack.aspx.designer.cs">
+    <Compile Include="Sample\IsPostBack\IsPostBack.aspx.designer.cs">
       <DependentUpon>IsPostBack.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\PageLifeCycleEvents.aspx.cs">
+    <Compile Include="Sample\PageLifeCycleEvents\PageLifeCycleEvents.aspx.cs">
       <DependentUpon>PageLifeCycleEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\PageLifeCycleEvents.aspx.designer.cs">
+    <Compile Include="Sample\PageLifeCycleEvents\PageLifeCycleEvents.aspx.designer.cs">
       <DependentUpon>PageLifeCycleEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sample\QueryString\WebForm2.aspx.cs">
@@ -172,11 +195,11 @@
     <Compile Include="Sample\QueryString\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\Server.MapPath.aspx.cs">
+    <Compile Include="Sample\Server.MapPath\Server.MapPath.aspx.cs">
       <DependentUpon>Server.MapPath.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\Server.MapPath.aspx.designer.cs">
+    <Compile Include="Sample\Server.MapPath\Server.MapPath.aspx.designer.cs">
       <DependentUpon>Server.MapPath.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sample\SessionSate\WebForm1.aspx.cs">
@@ -193,12 +216,61 @@
     <Compile Include="Sample\SessionSate\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx.cs">
+    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink\TextboxCheckboxRadiobuttonHyperlink.aspx.cs">
       <DependentUpon>TextboxCheckboxRadiobuttonHyperlink.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink.aspx.designer.cs">
+    <Compile Include="Sample\TextboxCheckboxRadiobuttonHyperlink\TextboxCheckboxRadiobuttonHyperlink.aspx.designer.cs">
       <DependentUpon>TextboxCheckboxRadiobuttonHyperlink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\CompareValidatorControl.aspx.cs">
+      <DependentUpon>CompareValidatorControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\CompareValidatorControl.aspx.designer.cs">
+      <DependentUpon>CompareValidatorControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\CustomValidatorControl.aspx.cs">
+      <DependentUpon>CustomValidatorControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\CustomValidatorControl.aspx.designer.cs">
+      <DependentUpon>CustomValidatorControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RangevalidatorControl.aspx.cs">
+      <DependentUpon>RangevalidatorControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RangevalidatorControl.aspx.designer.cs">
+      <DependentUpon>RangevalidatorControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RegularExpressionValidatorControl.aspx.cs">
+      <DependentUpon>RegularExpressionValidatorControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RegularExpressionValidatorControl.aspx.designer.cs">
+      <DependentUpon>RegularExpressionValidatorControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RequiredFieldValidatorControl.aspx.cs">
+      <DependentUpon>RequiredFieldValidatorControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\RequiredFieldValidatorControl.aspx.designer.cs">
+      <DependentUpon>RequiredFieldValidatorControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\ValidationGroups.aspx.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\ValidationGroups.aspx.designer.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\ValidationSummaryControl.aspx.cs">
+      <DependentUpon>ValidationSummaryControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\ValidatorControl\ValidationSummaryControl.aspx.designer.cs">
+      <DependentUpon>ValidationSummaryControl.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
