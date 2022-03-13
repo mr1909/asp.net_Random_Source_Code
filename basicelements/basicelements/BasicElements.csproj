@@ -66,6 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\Calendar.png" />
+    <Content Include="Assets\Images\Google.png" />
+    <Content Include="Assets\Images\Youtube.png" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\css\bootstrap-grid.css" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Libs\bootstrap-4.6.1\css\bootstrap-reboot.css" />
@@ -101,13 +104,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sample\031_Adrotator\Adrotator.aspx" />
+    <Content Include="Sample\031_Adrotator\AdsData.xml" />
+    <Content Include="Sample\032-033_Calendar\Calendar.aspx" />
+    <Content Include="Sample\034_HiddenField\HiddenField.aspx" />
     <Content Include="Sample\Cookies\WebForm1.aspx" />
     <Content Include="Sample\Cookies\WebForm2.aspx" />
+    <Content Include="Sample\Fileupload_\Fileupload.aspx" />
     <Content Include="Sample\PanelControl\CreatingControlsDynamicallyUsingPanelControl.aspx" />
     <Content Include="Sample\PanelControl\PanelControl.aspx" />
     <Content Include="Sample\QueryString\WebForm1.aspx" />
     <Content Include="Sample\Dropdownlist\Dropdownlist.aspx" />
-    <Content Include="Sample\IsPostBack\IsPostBack.aspx" />
+    <Content Include="Sample\008_IsPostBack\IsPostBack.aspx" />
     <Content Include="Sample\PageLifeCycleEvents\PageLifeCycleEvents.aspx" />
     <Content Include="Sample\QueryString\WebForm2.aspx" />
     <Content Include="Sample\Server.MapPath\Server.MapPath.aspx" />
@@ -132,6 +140,27 @@
       <DependentUpon>MasterPage1.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample\031_Adrotator\Adrotator.aspx.cs">
+      <DependentUpon>Adrotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\031_Adrotator\Adrotator.aspx.designer.cs">
+      <DependentUpon>Adrotator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\032-033_Calendar\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\032-033_Calendar\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\034_HiddenField\HiddenField.aspx.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\034_HiddenField\HiddenField.aspx.designer.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sample\Cookies\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,6 +174,13 @@
     </Compile>
     <Compile Include="Sample\Cookies\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\Fileupload_\Fileupload.aspx.cs">
+      <DependentUpon>Fileupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\Fileupload_\Fileupload.aspx.designer.cs">
+      <DependentUpon>Fileupload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sample\PanelControl\CreatingControlsDynamicallyUsingPanelControl.aspx.cs">
       <DependentUpon>CreatingControlsDynamicallyUsingPanelControl.aspx</DependentUpon>
@@ -174,11 +210,11 @@
     <Compile Include="Sample\Dropdownlist\Dropdownlist.aspx.designer.cs">
       <DependentUpon>Dropdownlist.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sample\IsPostBack\IsPostBack.aspx.cs">
+    <Compile Include="Sample\008_IsPostBack\IsPostBack.aspx.cs">
       <DependentUpon>IsPostBack.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sample\IsPostBack\IsPostBack.aspx.designer.cs">
+    <Compile Include="Sample\008_IsPostBack\IsPostBack.aspx.designer.cs">
       <DependentUpon>IsPostBack.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sample\PageLifeCycleEvents\PageLifeCycleEvents.aspx.cs">
@@ -276,9 +312,9 @@
   <ItemGroup>
     <Folder Include="API\" />
     <Folder Include="Assets\CSS\" />
-    <Folder Include="Assets\Images\" />
     <Folder Include="Assets\JS\" />
     <Folder Include="ContentPages\" />
+    <Folder Include="Temp\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
